@@ -1,0 +1,31 @@
+<h1>make password</h1>
+
+<div>
+  <label>şifre uzunluğu</label>
+  <input type="text">
+</div>
+
+<div>
+  <label>alfebeyi kullan</label>
+  <input type="checkbox">
+</div>
+<div>
+  <label>sayılari kullan</label>
+  <input type="checkbox">
+</div>
+<div>
+  <label>sembolleri kullan</label>
+  <input type="checkbox">
+</div>
+<div>
+  <button (click)="buttonClick()">şifre oluştur</button>
+</div>
+
+<div>
+  <label>şifreniz</label>
+  <input [value]="password">
+</div>
+
+<p>{{password}}</p>
+
+<p>{{getName()}}</p>
