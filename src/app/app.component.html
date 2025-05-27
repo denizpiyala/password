@@ -2,20 +2,20 @@
 
 <div>
   <label>şifre uzunluğu</label>
-  <input type="text">
+  <input type="text" (change)="modifyLenght($event.target.value)" >
 </div>
 
 <div>
   <label>alfebeyi kullan</label>
-  <input  type="checkbox">
+  <input (change)="modifyLetters()" type="checkbox">
 </div>
 <div>
   <label>sayılari kullan</label>
-  <input type="checkbox">
+  <input (change)="modifyNumbers()" type="checkbox">
 </div>
 <div>
   <label>sembolleri kullan</label>
-  <input type="checkbox">
+  <input (change) = "modifySybols()" type="checkbox">
 </div>
 <div>
   <button (click)="buttonClick()">şifre oluştur</button>
@@ -23,11 +23,8 @@
 
 <div>
   <label>şifreniz</label>
-  <input [value]="password">
+  <input >
 </div>
 
-<p>{{password}}</p>
 
-<p>{{getName()}}</p>
-//intrpolation yöntemi budur 
 
