@@ -9,13 +9,25 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class AppComponent {
-modify() {
-throw new Error('Method not implemented.');
-}
   title = 'password';
+  
+  password:string = 'deniz';
   buttonClick() {
+    this.password = 'diniz piyala';
+     
     console.log("event binding i öğreniyorum");
   } //fonksiyon ismiyele yapmak istediğimiz işlemi yazıyoruz.
+  getPassword()
+  {
+    return this.password;
+  }
+
+  getName()
+  {
+    return 'Hilal';
+  }
+
+
 }
  
   

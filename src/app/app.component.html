@@ -7,7 +7,7 @@
 
 <div>
   <label>alfebeyi kullan</label>
-  <input (change)="modify()" type="checkbox">
+  <input  type="checkbox">
 </div>
 <div>
   <label>sayılari kullan</label>
@@ -20,4 +20,14 @@
 <div>
   <button (click)="buttonClick()">şifre oluştur</button>
 </div>
+
+<div>
+  <label>şifreniz</label>
+  <input [value]="password">
+</div>
+
+<p>{{password}}</p>
+
+<p>{{getName()}}</p>
+//intrpolation yöntemi budur 
 
